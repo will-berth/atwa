@@ -50,6 +50,7 @@ def main():
     parser.add_argument('--pattern', type=str, help='Pattern for generating file names, e.g., {0}_{1}.')
     parser.add_argument('--max-vals', type=str, help='Comma-separated max values for generating file names, e.g., 1263,7.')
     parser.add_argument('--output-dir', type=str, default='downloads', help='Directory to save downloaded files.')
+    parser.add_argument('--file-type', type=str, default='downloads', help='Specific file type, e.g: mp3, pdf, doc')
     args = parser.parse_args()
 
     if not os.path.exists(args.output_dir):
